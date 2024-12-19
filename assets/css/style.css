@@ -1,0 +1,48 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black; /* Latar belakang hitam */
+  background-size: cover; /* Mengatur gambar agar menutupi seluruh latar belakang */
+  background-position: center; /* Memusatkan gambar */
+  color: #ffffff; /* Warna teks putih */
+  margin: 0;
+  padding: 0;
+  position: relative; /* Untuk overlay */
+}
+
+/* Hapus atau komentari bagian overlay jika tidak diperlukan */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay hitam dengan transparansi */
+  z-index: 1; /* Pastikan overlay berada di bawah konten */
+}
+
+.container {
+  position: relative; /* Untuk menempatkan konten di atas overlay */
+  z-index: 2; /* Pastikan konten berada di atas overlay */
+}
+
+.card {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Latar belakang putih dengan transparansi */
+}
+
+.gradient-border {
+  border: 5px solid transparent; /* Border transparan untuk efek gradasi */
+  border-radius: 10px; /* Sudut melengkung */
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #ff6f61, #ffcc00, #007bff); /* Gradasi warna */
+  background-origin: border-box; /* Mengatur asal latar belakang */
+  background-clip: content-box, border-box; /* Mengatur pemotongan latar belakang */
+}
+
+.text-danger {
+  color: #ff6f61; /* Warna merah untuk teks error */
+}
